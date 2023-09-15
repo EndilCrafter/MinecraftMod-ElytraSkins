@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All rights reserved"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+[[mods]]
+modId="elytras"
+version="${file.jarVersion}"
+displayName="Elytra Skins"
+#updateJSONURL="https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+logoFile="logo.png"
+credits="Credits go here"
+authors="HexagonNico"
+#displayTest="MATCH_VERSION"
+
+description='''
+This is a description. You're welcome.
+'''
+
+[[dependencies.elytras]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.elytras]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
