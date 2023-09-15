@@ -12,6 +12,7 @@ public class ElytraSkinsMod {
 
     public ElytraSkinsMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ElytraSkinsItems.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
