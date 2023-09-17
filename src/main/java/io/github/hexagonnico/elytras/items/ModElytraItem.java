@@ -1,5 +1,7 @@
 package io.github.hexagonnico.elytras.items;
 
+import io.github.hexagonnico.elytras.ElytraSkinsMod;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -12,12 +14,15 @@ import org.jetbrains.annotations.NotNull;
 
 public class ModElytraItem extends ElytraItem {
 
-    public ModElytraItem(Properties properties) {
+    public final ResourceLocation textureLocation;
+
+    public ModElytraItem(Properties properties, String texture) {
         super(properties);
+        this.textureLocation = new ResourceLocation(ElytraSkinsMod.ID, texture);
     }
 
-    public ModElytraItem() {
-        this(new Item.Properties().durability(432).tab(CreativeModeTab.TAB_TRANSPORTATION).rarity(Rarity.UNCOMMON));
+    public ModElytraItem(String texture) {
+        this(new Item.Properties().durability(432).tab(CreativeModeTab.TAB_TRANSPORTATION).rarity(Rarity.UNCOMMON), texture);
     }
 
     @Override

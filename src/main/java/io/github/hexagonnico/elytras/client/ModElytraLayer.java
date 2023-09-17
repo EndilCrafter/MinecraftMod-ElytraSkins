@@ -1,7 +1,6 @@
 package io.github.hexagonnico.elytras.client;
 
-import io.github.hexagonnico.elytras.ElytraSkinsItems;
-import io.github.hexagonnico.elytras.ElytraSkinsMod;
+import io.github.hexagonnico.elytras.items.ModElytraItem;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.entity.RenderLayerParent;
@@ -22,8 +21,7 @@ public class ModElytraLayer<T extends LivingEntity, M extends EntityModel<T>> ex
 
     @Override
     public boolean shouldRender(@NotNull ItemStack stack, @NotNull T entity) {
-        // TODO: Add other items
-        if(stack.is(ElytraSkinsItems.TEST_ELYTRA.get())) {
+        if(stack.getItem() instanceof ModElytraItem) {
             return true;
         }
         return super.shouldRender(stack, entity);
@@ -31,8 +29,8 @@ public class ModElytraLayer<T extends LivingEntity, M extends EntityModel<T>> ex
 
     @Override
     public @NotNull ResourceLocation getElytraTexture(@NotNull ItemStack stack, @NotNull T entity) {
-        if(stack.is(ElytraSkinsItems.TEST_ELYTRA.get())) {
-            return new ResourceLocation(ElytraSkinsMod.ID, "textures/entity/test_elytra.png");
+        if(stack.getItem() instanceof ModElytraItem item) {
+            return item.textureLocation;
         }
         return super.getElytraTexture(stack, entity);
     }
