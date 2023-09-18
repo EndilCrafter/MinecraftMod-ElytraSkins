@@ -16,9 +16,11 @@ public class ElytraSkinsItems {
     public static final RegistryObject<Item> VEX_ELYTRA = REGISTER.register("vex_elytra", () -> new ModElytraItem("textures/elytra/vex.png"));
     public static final RegistryObject<Item> ALLAY_ELYTRA = REGISTER.register("allay_elytra", () -> new ModElytraItem("textures/elytra/allay.png"));
     public static final RegistryObject<Item> DRAGON_ELYTRA = REGISTER.register("dragon_elytra", () -> new ModElytraItem("textures/elytra/dragon.png"));
+    public static final RegistryObject<Item> PARROT_ELYTRA = REGISTER.register("parrot_elytra", () -> new ModElytraItem("textures/elytra/parrot.png"));
 
     public static final RegistryObject<Item> VEX_WING = REGISTER.register("vex_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
     public static final RegistryObject<Item> ALLAY_WING = REGISTER.register("allay_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    public static final RegistryObject<Item> PARROT_FEATHER = REGISTER.register("parrot_feather", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
     public static void register(IEventBus eventBus) {
         REGISTER.register(eventBus);
