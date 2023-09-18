@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    "elytras:add_loot_pillager_outpost",
+    "elytras:add_loot_vex",
+    "elytras:add_loot_allay"
+  ]
+}

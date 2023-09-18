@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "elytras:item/elytra/dragon"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "damaged": 1,
+        "damage": 0.997
+      },
+      "model": "elytras:item/broken_dragon_elytra"
+    }
+  ]
+}

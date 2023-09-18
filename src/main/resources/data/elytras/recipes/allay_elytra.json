@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "elytra",
+  "pattern": [
+    "OwO"
+  ],
+  "key": {
+    "O": {
+      "item": "elytras:allay_wing"
+    },
+    "w": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "elytras:allay_elytra"
+  }
+}

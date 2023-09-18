@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "elytra",
+  "pattern": [
+    "OwO"
+  ],
+  "key": {
+    "O": {
+      "item": "quark:dragon_scale"
+    },
+    "w": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "elytras:dragon_elytra"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ]
+}

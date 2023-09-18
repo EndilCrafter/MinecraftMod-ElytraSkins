@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[43,)"
-license="All rights reserved"
+license="CC BY-NC 4.0"
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
 [[mods]]
 modId="elytras"
@@ -9,13 +9,9 @@ displayName="Elytra Skins"
 #updateJSONURL="https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
 logoFile="logo.png"
-credits="Credits go here"
+credits="vanillatweaks.net"
 authors="HexagonNico"
-#displayTest="MATCH_VERSION"
-
-description='''
-This is a description. You're welcome.
-'''
+description="Adds more elytra skins"
 
 [[dependencies.elytras]]
     modId="forge"
@@ -23,6 +19,7 @@ This is a description. You're welcome.
     versionRange="[43,)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.elytras]]
     modId="minecraft"
     mandatory=true
