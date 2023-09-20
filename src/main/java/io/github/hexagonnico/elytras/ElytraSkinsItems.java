@@ -18,6 +18,7 @@ public class ElytraSkinsItems {
     public static final RegistryObject<Item> DRAGON_ELYTRA = REGISTER.register("dragon_elytra", () -> new ModElytraItem("textures/elytra/dragon.png"));
     public static final RegistryObject<Item> PARROT_ELYTRA = REGISTER.register("parrot_elytra", () -> new ModElytraItem("textures/elytra/parrot.png"));
     public static final RegistryObject<Item> BAT_ELYTRA = REGISTER.register("bat_elytra", () -> new ModElytraItem("textures/elytra/bat.png"));
+    public static final RegistryObject<Item> CREEPER_ELYTRA = REGISTER.register("creeper_elytra", () -> new ModElytraItem("textures/elytra/creeper.png"));
 
     public static final RegistryObject<Item> VEX_WING = REGISTER.register("vex_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
     public static final RegistryObject<Item> ALLAY_WING = REGISTER.register("allay_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));

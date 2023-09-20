@@ -21,6 +21,7 @@ public class ElytraSkinsConfig {
         register(configBuilder, "dragon_elytra", true);
         register(configBuilder, "parrot_elytra", true);
         register(configBuilder, "bat_elytra", true);
+        register(configBuilder, "creeper_elytra", true);
         configBuilder.pop();
         configBuilder.comment(" Enable or disable other items");
         configBuilder.comment(" Setting any of these to 'false' will make the item unobtainable");

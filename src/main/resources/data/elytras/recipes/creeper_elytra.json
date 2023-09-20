@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "elytra",
+  "ingredients": [
+    {
+      "item": "minecraft:elytra"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "item": "minecraft:creeper_banner_pattern"
+    }
+  ],
+  "result": {
+    "item": "elytras:creeper_elytra"
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "creeper_elytra"
+    }
+  ]
+}
