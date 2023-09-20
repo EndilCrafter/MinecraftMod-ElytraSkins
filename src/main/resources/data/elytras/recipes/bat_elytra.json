@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "elytras:bat_elytra"
-  }
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "bat_elytra"
+    }
+  ]
 }

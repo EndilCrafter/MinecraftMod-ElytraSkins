@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "elytras:vex_elytra"
-  }
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "vex_elytra"
+    }
+  ]
 }

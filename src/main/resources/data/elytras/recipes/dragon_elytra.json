@@ -19,6 +19,10 @@
     {
       "type": "forge:mod_loaded",
       "modid": "quark"
+    },
+    {
+      "type": "elytras:config",
+      "key": "dragon_elytra"
     }
   ]
 }

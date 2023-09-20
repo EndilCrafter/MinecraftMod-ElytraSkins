@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "elytras:parrot_elytra"
-  }
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "parrot_elytra"
+    }
+  ]
 }

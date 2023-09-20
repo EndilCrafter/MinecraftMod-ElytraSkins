@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "elytras:allay_elytra"
-  }
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "allay_elytra"
+    }
+  ]
 }

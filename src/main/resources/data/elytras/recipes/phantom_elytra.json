@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "elytras:phantom_elytra"
-  }
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "phantom_elytra"
+    }
+  ]
 }
