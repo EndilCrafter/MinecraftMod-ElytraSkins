@@ -1,17 +1,18 @@
 plugins {
     id 'eclipse'
     id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-version = '1.1'
+version = '2.0'
 group = 'io.github.hexagonnico.elytras'
 archivesBaseName = 'elytras'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.19.4'
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
     runs {
         client {
             workingDirectory project.file('run')
@@ -34,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.1.0'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.1.0'
 }
 
 jar {
@@ -42,7 +43,7 @@ jar {
         attributes([
                 "Specification-Title": "elytras",
                 "Specification-Vendor": "HexagonNico",
-                "Specification-Version": "1.1",
+                "Specification-Version": "2.0",
                 "Implementation-Title": project.name,
                 "Implementation-Version": project.jar.archiveVersion,
                 "Implementation-Vendor": "HexagonNico",

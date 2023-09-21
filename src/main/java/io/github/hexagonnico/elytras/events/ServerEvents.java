@@ -22,7 +22,7 @@ public class ServerEvents {
             LivingEntity entity = event.getEntity();
             if(entity instanceof Parrot && event.getAmount() <= 1.0) {
                 Vec3 position = entity.position();
-                Level world = entity.getLevel();
+                Level world = entity.level();
                 ItemStack itemStack = new ItemStack(ElytraSkinsItems.PARROT_FEATHER.get());
                 world.addFreshEntity(new ItemEntity(world, position.x(), position.y(), position.z(), itemStack));
             }

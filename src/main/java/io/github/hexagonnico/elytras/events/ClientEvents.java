@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -30,8 +30,8 @@ public class ClientEvents {
     }
 
     @SubscribeEvent
-    public static void onCreativeTabBuildContents(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab().equals(CreativeModeTabs.TOOLS_AND_UTILITIES)) {
+    public static void onCreativeTabBuildContents(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey().equals(CreativeModeTabs.TOOLS_AND_UTILITIES)) {
             event.accept(ElytraSkinsItems.PHANTOM_ELYTRA::get);
             event.accept(ElytraSkinsItems.VEX_ELYTRA::get);
             event.accept(ElytraSkinsItems.ALLAY_ELYTRA::get);
@@ -39,7 +39,7 @@ public class ClientEvents {
             event.accept(ElytraSkinsItems.PARROT_ELYTRA::get);
             event.accept(ElytraSkinsItems.BAT_ELYTRA::get);
             event.accept(ElytraSkinsItems.CREEPER_ELYTRA::get);
-        } else if(event.getTab().equals(CreativeModeTabs.INGREDIENTS)) {
+        } else if(event.getTabKey().equals(CreativeModeTabs.INGREDIENTS)) {
             event.accept(ElytraSkinsItems.VEX_WING::get);
             event.accept(ElytraSkinsItems.ALLAY_WING::get);
             event.accept(ElytraSkinsItems.PARROT_FEATHER::get);

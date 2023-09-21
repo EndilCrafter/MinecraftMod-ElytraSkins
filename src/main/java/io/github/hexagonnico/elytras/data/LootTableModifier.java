@@ -32,8 +32,8 @@ public class LootTableModifier extends LootModifier {
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if(this.configKey.isEmpty() || ElytraSkinsConfig.getBoolean(this.configKey)) {
-            LootTable extraTable = context.getLootTable(this.lootTable);
-            extraTable.getRandomItemsRaw(context, LootTable.createStackSplitter(context, generatedLoot::add));
+            LootTable extraTable = context.getResolver().getLootTable(this.lootTable);
+            extraTable.getRandomItemsRaw(context, LootTable.createStackSplitter(context.getLevel(), generatedLoot::add));
         }
         return generatedLoot;
     }
