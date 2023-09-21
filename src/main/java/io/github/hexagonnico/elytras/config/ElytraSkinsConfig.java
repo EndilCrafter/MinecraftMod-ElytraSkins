@@ -4,10 +4,17 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.HashMap;
 
+/**
+ * Class containing the mod's config.
+ *
+ * @author Nico
+ */
 public class ElytraSkinsConfig {
 
+    /** Config spec must be registered in the initialization of the mod */
     public static final ForgeConfigSpec CONFIG_SPEC;
 
+    /** Stores the config's boolean values for easier access */
     private static final HashMap<String, ForgeConfigSpec.BooleanValue> BOOLEAN_VALUES = new HashMap<>();
 
     static {
@@ -35,10 +42,23 @@ public class ElytraSkinsConfig {
         CONFIG_SPEC = configBuilder.build();
     }
 
+    /**
+     * Creates a boolean config value and stores it for easier access.
+     *
+     * @param configBuilder {@code ForgeConfigSpec.Builder}
+     * @param key The key used in the config file and to retrieve the value
+     * @param defaultValue The default value in the config file
+     */
     private static void register(ForgeConfigSpec.Builder configBuilder, String key, boolean defaultValue) {
         BOOLEAN_VALUES.put(key, configBuilder.define(key, defaultValue));
     }
 
+    /**
+     * Gets a boolean value from the config.
+     *
+     * @param key The key used in the config file.
+     * @return The requested value
+     */
     public static boolean getBoolean(String key) {
         return BOOLEAN_VALUES.get(key).get();
     }

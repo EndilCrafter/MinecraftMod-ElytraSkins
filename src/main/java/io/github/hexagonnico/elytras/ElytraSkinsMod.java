@@ -11,11 +11,20 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+/**
+ * Main mod class.
+ *
+ * @author Nico
+ */
 @Mod(ElytraSkinsMod.ID)
 public class ElytraSkinsMod {
 
+    /** Forge mod id */
     public static final String ID = "elytras";
 
+    /**
+     * Initialization of the mod.
+     */
     public ElytraSkinsMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ElytraSkinsItems.register(eventBus);
@@ -25,6 +34,11 @@ public class ElytraSkinsMod {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    /**
+     * Setup events common to client and server.
+     *
+     * @param event Setup event
+     */
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             CraftingHelper.register(ConfigCondition.SERIALIZER);
