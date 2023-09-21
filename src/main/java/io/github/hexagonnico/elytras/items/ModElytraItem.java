@@ -16,7 +16,7 @@ public class ModElytraItem extends ElytraItem {
     }
 
     public ModElytraItem(String texture) {
-        this(new Item.Properties().durability(432).tab(CreativeModeTab.TAB_TRANSPORTATION).rarity(Rarity.UNCOMMON), texture);
+        this(new Item.Properties().durability(432).rarity(Rarity.UNCOMMON), texture);
     }
 
     @Override

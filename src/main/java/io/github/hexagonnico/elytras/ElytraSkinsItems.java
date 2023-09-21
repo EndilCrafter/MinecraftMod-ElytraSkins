@@ -1,7 +1,6 @@
 package io.github.hexagonnico.elytras;
 
 import io.github.hexagonnico.elytras.items.ModElytraItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,10 +19,10 @@ public class ElytraSkinsItems {
     public static final RegistryObject<Item> BAT_ELYTRA = REGISTER.register("bat_elytra", () -> new ModElytraItem("textures/elytra/bat.png"));
     public static final RegistryObject<Item> CREEPER_ELYTRA = REGISTER.register("creeper_elytra", () -> new ModElytraItem("textures/elytra/creeper.png"));
 
-    public static final RegistryObject<Item> VEX_WING = REGISTER.register("vex_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-    public static final RegistryObject<Item> ALLAY_WING = REGISTER.register("allay_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-    public static final RegistryObject<Item> PARROT_FEATHER = REGISTER.register("parrot_feather", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
-    public static final RegistryObject<Item> BAT_WING = REGISTER.register("bat_wing", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    public static final RegistryObject<Item> VEX_WING = REGISTER.register("vex_wing", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ALLAY_WING = REGISTER.register("allay_wing", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PARROT_FEATHER = REGISTER.register("parrot_feather", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BAT_WING = REGISTER.register("bat_wing", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         REGISTER.register(eventBus);

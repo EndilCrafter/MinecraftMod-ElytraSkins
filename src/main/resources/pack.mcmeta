@@ -1,8 +1,9 @@
 {
   "pack": {
-    "description": "Elytra Skins mod resources",
-    "pack_format": 9,
-    "forge:resource_pack_format": 9,
-    "forge:data_pack_format": 10
+    "description": {
+      "text": "Elytra Skins mod resources"
+    },
+    "forge:server_data_pack_format": 12,
+    "pack_format": 13
   }
 }
