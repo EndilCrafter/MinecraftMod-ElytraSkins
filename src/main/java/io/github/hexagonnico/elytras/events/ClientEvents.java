@@ -12,9 +12,19 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+/**
+ * Mod event handler to handle client events.
+ *
+ * @author Nico
+ */
 @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD, modid = ElytraSkinsMod.ID)
 public class ClientEvents {
 
+    /**
+     * Adds a render layer to players to render the new elytra skins.
+     *
+     * @param event {@code AddLayers} event
+     */
     @SubscribeEvent
     public static void onAddLayersEvent(EntityRenderersEvent.AddLayers event) {
         EntityModelSet entityModelSet = event.getEntityModels();
