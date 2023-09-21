@@ -8,13 +8,26 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 
+/**
+ * Condition used in crafting recipes that allows modpack authors to disable crafting recipes.
+ *
+ * @author Nico
+ */
 public class ConfigCondition implements ICondition {
 
+    /** The key to use in the crafting recipe's json file */
     public static final ResourceLocation RESOURCE_LOCATION = new ResourceLocation(ElytraSkinsMod.ID, "config");
+    /** The condition serializer must be registered in the common setup */
     public static final Serializer SERIALIZER = new Serializer();
 
+    /** The config key */
     private final String key;
 
+    /**
+     * Creates a condition with the given key
+     *
+     * @param key The config key
+     */
     private ConfigCondition(String key) {
         this.key = key;
     }
@@ -29,6 +42,11 @@ public class ConfigCondition implements ICondition {
         return ElytraSkinsConfig.getBoolean(this.key);
     }
 
+    /**
+     * Responsible for serializing and deserializing conditions to and from json files.
+     *
+     * @author Nico
+     */
     private static class Serializer implements IConditionSerializer<ConfigCondition> {
 
         @Override

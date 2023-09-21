@@ -13,9 +13,19 @@ import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+/**
+ * Mod event handler.
+ *
+ * @author Nico
+ */
 @Mod.EventBusSubscriber(modid = ElytraSkinsMod.ID)
 public class ServerEvents {
 
+    /**
+     * Causes parrots to drop feathers when damaged for 1 point.
+     *
+     * @param event {@code LivingDamageEvent}
+     */
     @SubscribeEvent
     public static void onLivingDamage(LivingDamageEvent event) {
         if(ElytraSkinsConfig.getBoolean("parrot_feather")) {
