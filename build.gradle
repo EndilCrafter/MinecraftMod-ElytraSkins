@@ -6,7 +6,7 @@ plugins {
 
 version = '2.0'
 group = 'io.github.hexagonnico.elytras'
-archivesBaseName = 'elytras'
+archivesBaseName = 'elytras-forge-1.20.1'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
