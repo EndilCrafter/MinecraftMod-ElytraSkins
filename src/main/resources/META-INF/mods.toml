@@ -1,13 +1,14 @@
 modLoader="javafml"
 loaderVersion="[45,)"
-license="CC BY-NC 4.0"
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+license="CC BY-NC-ND 4.0"
+issueTrackerURL="https://github.com/HexagonNico/MinecraftMod-ElytraSkins/issues"
+
 [[mods]]
 modId="elytras"
 version="${file.jarVersion}"
 displayName="Elytra Skins"
 #updateJSONURL="https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/"
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+displayURL="https://github.com/HexagonNico/MinecraftMod-ElytraSkins"
 logoFile="logo.png"
 credits="vanillatweaks.net"
 authors="HexagonNico"
