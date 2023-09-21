@@ -4,9 +4,9 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '0.1'
+version = '1.0'
 group = 'io.github.hexagonnico.elytras'
-archivesBaseName = 'elytras'
+archivesBaseName = 'elytras-forge-1.19.2'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -42,7 +42,7 @@ jar {
         attributes([
                 "Specification-Title": "elytras",
                 "Specification-Vendor": "HexagonNico",
-                "Specification-Version": "0.1",
+                "Specification-Version": "1.0",
                 "Implementation-Title": project.name,
                 "Implementation-Version": project.jar.archiveVersion,
                 "Implementation-Vendor": "HexagonNico",
