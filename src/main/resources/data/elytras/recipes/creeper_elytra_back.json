@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "elytra_back",
+  "ingredients": [
+    {
+      "item": "elytras:creeper_elytra"
+    }
+  ],
+  "result": {
+    "item": "minecraft:elytra"
+  },
+  "conditions": [
+    {
+      "type": "elytras:config",
+      "key": "creeper_elytra"
+    }
+  ]
+}
