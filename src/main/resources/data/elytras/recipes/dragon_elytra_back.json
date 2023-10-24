@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "elytra_back",
+  "ingredients": [
+    {
+      "item": "elytras:dragon_elytra"
+    }
+  ],
+  "result": {
+    "item": "minecraft:elytra"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "elytras:config",
+      "key": "dragon_elytra"
+    }
+  ]
+}
